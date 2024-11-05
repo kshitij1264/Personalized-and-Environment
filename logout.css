@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.site-header { 
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .6em 0;
+  display: inline-block;
+}
+
+
+.site-navigation ul, 
+.site-navigation li {
+  margin: 0; 
+  padding: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+body{
+    background: url(1.jpg) no-repeat;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 900px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+}
+
+p{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(137, 137, 137);
+    margin-top: 10px;
+    outline: none;
+}
+
+.login-btn{
+    border: none;
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.logout-btn{
+    border: none;
+    background-color: rgb(255, 71, 71);
+    color: #fff;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}

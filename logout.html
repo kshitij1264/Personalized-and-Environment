@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><iframe width="250" height="160" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2304651/widgets/738105"></iframe></h1>
+      <h1><iframe width="250" height="160" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2304651/widgets/738103"></iframe></h1>
+      <p>
+        
+      </p>
+      <button class="logout-btn">Logout</button>
+    </div>
+    <script src="./logout.js"></script>
+    <script>
+      function readIframeValue() {
+          // Access the iframe element
+          const iframe = document.getElementById("myIframe");
+          
+          // Access the content of the iframe
+          const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+          
+          // Access the value from an element within the iframe
+          const valueFromIframe = iframeDocument.getElementById("valueInIframe").value;
+          
+          // Display the value from the iframe
+          document.getElementById("output").innerText = "Value from iframe: " + valueFromIframe;
+      }
+  </script>
+  </body>
+</html>
