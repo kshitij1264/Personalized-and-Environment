@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThingSpeak Data Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ThingSpeak Data</h1>
+    <p>Here is the data fetched from ThingSpeak:</p>
+    
+    <div id="data-container">
+        <p><strong>Temperature:</strong> <span id="temperature">Loading...</span></p>
+        <p><strong>Humidity:</strong> <span id="humidity">Loading...</span></p>
+        <!-- Add more data fields as needed -->
+    </div>
+
+    <script>
+        // ThingSpeak API endpoint and channel details
+        const channelID = '2703917';  // Replace with your channel ID
+        const readAPIKey = 'U53DVPFBORMYZ5M1'; // Replace with your read API key
+        
+        // ThingSpeak API URL to fetch latest data
+        const apiURL = `https://api.thingspeak.com/channels/${channelID}/feeds.json?api_key=${readAPIKey}&results=1`;
+
+        // Fetch data from ThingSpeak
+        fetch(apiURL)
+            .then(response => response.json())
+            .then(data => {
+                // Get the latest feed entry
+                const latestEntry = data.feeds[0];
+                
+                // Extract data from the feed entry
+                const temperature = latestEntry.field1; // Replace 'field1' with your field name for temperature
+                const humidity = latestEntry.field2;    // Replace 'field2' with your field name for humidity
+
+                // Display data on the webpage
+                document.getElementById('temperature').textContent = temperature + ' °C';
+                document.getElementById('humidity').textContent = humidity + ' %';
+            })
+            .catch(error => {
+                console.error('Error fetching ThingSpeak data:', error);
+                document.getElementById('temperature').textContent = 'Error';
+                document.getElementById('humidity').textContent = 'Error';
+            });
+    </script>
+
+</body>
+</html>
