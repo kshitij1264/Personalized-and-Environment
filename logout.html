@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="logout.css" />
     <title>Document</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2703917/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
-      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2703917/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
-      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2703917/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
-      <p>
+        <!-- Adding the uploaded image -->
+        <img src="path/to/your/image.jpeg" alt="Farm monitoring system diagram" width="600" style="border: 1px solid #cccccc;" />
         
-      </p>
-      <button class="logout-btn">Logout</button>
+        <!-- Existing iframes -->
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2703917/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2703917/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2703917/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
     </div>
-    <script src="./logout.js"></script>
-    <script>
-      function readIframeValue() {
-          // Access the iframe element
-          const iframe = document.getElementById("myIframe");
-          
-          // Access the content of the iframe
-          const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-          
-          // Access the value from an element within the iframe
-          const valueFromIframe = iframeDocument.getElementById("valueInIframe").value;
-          
-          // Display the value from the iframe
-          document.getElementById("output").innerText = "Value from iframe: " + valueFromIframe;
-      }
-  </script>
-  </body>
+</body>
 </html>
