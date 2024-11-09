@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Login Page</title>
+    <title>Environment Monitoring System</title>
     <style>
-        /* CSS for the background image and centering the form */
+        /* Full-page background image and alignment */
         body {
             background-image: url('WhatsApp Image 2024-11-07 at 12.03.06 PM.jpeg'); /* Path to your background image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -21,7 +22,17 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Centered container for the login form with a slight transparency */
+        /* Styling for the page heading */
+        .page-title {
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Centered container for the login form with a slightly transparent background */
         .container {
             background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
             padding: 20px 40px;
@@ -74,6 +85,9 @@
     </style>
 </head>
 <body>
+    <!-- Page heading -->
+    <h1 class="page-title">Environment Monitoring System</h1>
+    
     <div class="container">
         <h1>Login</h1>
         <form id="loginForm">
