@@ -1,4 +1,8 @@
-*{
+/* Importing Google Fonts for Alfa Slab One font */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* General styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +12,7 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 .site-header { 
   border-bottom: 1px solid #ccc;
   padding: .5em 1em;
@@ -21,7 +26,6 @@ a {
   display: inline-block;
 }
 
-
 .site-navigation ul, 
 .site-navigation li {
   margin: 0; 
@@ -32,7 +36,8 @@ a {
   display: inline-block;
   margin: 1.4em 1em 1em 1em;
 }
-body{
+
+body {
     background: url(1.jpg) no-repeat;
     display: grid;
     place-items: center;
@@ -41,7 +46,8 @@ body{
     margin: 0;
 }
 
-.container{
+/* Centered container for the content */
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,27 +60,32 @@ body{
     margin-left: 900px;
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+/* Styling for the heading "Environment Monitoring System" */
+h1 {
+    font-family: 'Alfa Slab One', sans-serif; /* Applying the Alfa Slab One font */
     padding-bottom: 30px;
+    font-size: 40px; /* Adjust the size as needed */
+    text-align: center;
+    color: #2d2d2d; /* Dark color for better contrast */
 }
 
-p{
+/* Styling for other form elements */
+p {
     text-align: center;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-label{
+label {
     font-size: 20px;
     font-weight: bold;
 }
 
-input{
+input {
     padding: 5px;
     border: none;
     border-bottom: 1px solid rgb(137, 137, 137);
@@ -82,7 +93,7 @@ input{
     outline: none;
 }
 
-.login-btn{
+.login-btn {
     border: none;
     background-color: green;
     color: #fff;
@@ -93,7 +104,7 @@ input{
     margin-top: 30px;
 }
 
-.logout-btn{
+.logout-btn {
     border: none;
     background-color: rgb(255, 71, 71);
     color: #fff;
