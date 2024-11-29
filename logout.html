@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sensor Dashboard</title>
+
+    <!-- Importing the Alfa Slab One font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    
     <style>
         /* Full-page background image */
         body {
@@ -42,10 +48,22 @@
             border: 1px solid #cccccc;
             border-radius: 5px;
         }
+
+        /* Styling for the heading "Environment Monitoring System" */
+        h1 {
+            font-family: 'Alfa Slab One', sans-serif; /* Applying the Alfa Slab One font */
+            color: #2d2d2d; /* Dark color for the heading */
+            font-size: 50px; /* Adjust the size as needed */
+            text-align: center;
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Heading -->
+        <h1>Environment Monitoring System</h1>
+        
         <!-- Existing graphs -->
         <iframe src="https://thingspeak.com/channels/2703917/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
         <iframe src="https://thingspeak.com/channels/2703917/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
@@ -63,7 +81,3 @@
     </div>
 </body>
 </html>
-
-
-
-  
