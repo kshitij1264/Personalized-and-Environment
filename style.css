@@ -1,39 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
-  color: #000;
-}
-.site-header { 
-  border-bottom: 1px solid #ccc;
-  padding: .5em 1em;
-  display: flex;
-  justify-content: space-between;
+    text-decoration: none;
+    color: #000;
 }
 
-.site-identity h1 {
-  font-size: 1.5em;
-  margin: .6em 0;
-  display: inline-block;
-}
-
-
-.site-navigation ul, 
-.site-navigation li {
-  margin: 0; 
-  padding: 0;
-}
-
-.site-navigation li {
-  display: inline-block;
-  margin: 1.4em 1em 1em 1em;
-}
-body{
-    background: url(1.jpg) no-repeat;
+body {
+    background: linear-gradient(135deg, rgba(40, 126, 198, 0.8), rgba(255, 71, 71, 0.8)), url('1.jpg') no-repeat;
+    background-size: cover;
     display: grid;
     place-items: center;
     height: 100vh;
@@ -41,7 +19,15 @@ body{
     margin: 0;
 }
 
-.container{
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 40px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,45 +37,50 @@ body{
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    margin-left: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 40px;
-    font-size: 40px;
-}
-
-p{
-    text-align: center;
-}
-
-form{
+form {
     display: flex;
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 15px;
 }
 
-label{
+label {
     font-size: 20px;
     font-weight: bold;
+    color: #333;
 }
 
-input{
-    padding: 10px;
+input {
+    padding: 12px;
     border: none;
-    border-bottom: 1px solid rgb(137, 137, 137);
-    margin-top: 15px;
+    border-bottom: 1px solid #888;
+    margin-top: 10px;
     outline: none;
+    font-size: 16px;
 }
 
-.button{
+.button {
     border: none;
-    background-color: rgb(40, 126, 198);
+    background-color: #008CBA;
     color: #fff;
     font-size: 20px;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 30px;
+    transition: background-color 0.3s ease;
 }
+
+.button:hover {
+    background-color: #005f73;
+}
+
+p {
+    text-align: center;
+}
+
